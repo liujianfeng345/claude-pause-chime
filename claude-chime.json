@@ -1,0 +1,23 @@
+{
+  "enabled": true,
+  "events": {
+    "stop": {
+      "mode": "tts",
+      "beep": { "frequency": 800, "duration": 300 },
+      "audio": { "path": "" },
+      "tts": { "text": "我在等你说话呢", "rate": 0, "volume": 100 }
+    },
+    "permission": {
+      "mode": "tts",
+      "beep": { "frequency": 1200, "duration": 200 },
+      "audio": { "path": "" },
+      "tts": { "text": "需要你的批准", "rate": 0, "volume": 100 }
+    },
+    "complete": {
+      "mode": "tts",
+      "beep": { "frequency": 600, "duration": 500 },
+      "audio": { "path": "" },
+      "tts": { "text": "任务已完成", "rate": 0, "volume": 100 }
+    }
+  }
+}
