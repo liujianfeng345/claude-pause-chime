@@ -67,18 +67,18 @@
   "hooks": {
     "Stop": [
       {
-        "command": "powershell -ExecutionPolicy Bypass -File \"C:/Users/87362/.claude/scripts/chime.ps1\" stop"
+        "command": "powershell -ExecutionPolicy Bypass -File \"~/.claude/scripts/chime.ps1\" stop"
       }
     ],
     "PreToolUse": [
       {
-        "command": "powershell -ExecutionPolicy Bypass -File \"C:/Users/87362/.claude/scripts/chime.ps1\" permission",
+        "command": "powershell -ExecutionPolicy Bypass -File \"~/.claude/scripts/chime.ps1\" permission",
         "matcher": "AskUserQuestion"
       }
     ],
     "Notification": [
       {
-        "command": "powershell -ExecutionPolicy Bypass -File \"C:/Users/87362/.claude/scripts/chime.ps1\" complete",
+        "command": "powershell -ExecutionPolicy Bypass -File \"~/.claude/scripts/chime.ps1\" complete",
         "matcher": "task-complete"
       }
     ]

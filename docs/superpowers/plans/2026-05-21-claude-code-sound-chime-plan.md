@@ -345,6 +345,6 @@ Remove-Item "$env:USERPROFILE\.claude\scripts" -Recurse
 ## 实现注意事项
 
 1. **Hook 名称验证**：`Stop`、`PreToolUse`、`Notification` 以及 matcher 值 `task-complete` 需要在 Task 3 Step 3 写入前，根据 Claude Code 实际支持的 hook 命名做最终确认
-2. **脚本路径**：settings.json 中 command 字段使用 `$env:USERPROFILE` 环境变量可能不会被展开，如遇问题改用 `C:/Users/87362/` 绝对路径
+2. **脚本路径**：settings.json 中 command 字段使用 `$env:USERPROFILE` 环境变量可能不会被展开，如遇问题改用 `$HOME/` 绝对路径
 3. **字符编码**：PowerShell 脚本和 JSON 配置均使用 UTF-8 编码保存
 4. **权限**：chime.ps1 通过 `-ExecutionPolicy Bypass` 执行，无需设置系统执行策略
